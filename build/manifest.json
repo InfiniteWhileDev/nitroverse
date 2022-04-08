@@ -1,0 +1,23 @@
+{
+  "build/main.css": "/build/main.css",
+  "build/main.js": "/build/main.js",
+  "build/images/pass.gif": "/build/images/pass.gif",
+  "build/images/silver.gif": "/build/images/silver.gif",
+  "build/images/daimondPass.gif": "/build/images/daimondPass.gif",
+  "build/images/bg2.png": "/build/images/bg2.png",
+  "build/images/bg.png": "/build/images/bg.png",
+  "build/images/pass.png": "/build/images/pass.png",
+  "build/images/world1.jpg": "/build/images/world1.jpg",
+  "build/images/world4.jpg": "/build/images/world4.jpg",
+  "build/images/flutterimg.jpg": "/build/images/flutterimg.jpg",
+  "build/images/flutterimg.webp": "/build/images/flutterimg.webp",
+  "build/images/bg2.jpeg": "/build/images/bg2.jpeg",
+  "build/images/world2.jpg": "/build/images/world2.jpg",
+  "build/images/fav.png": "/build/images/fav.png",
+  "build/images/pass_gold.png": "/build/images/pass_gold.png",
+  "build/images/world3.jpg": "/build/images/world3.jpg",
+  "build/images/logo.png": "/build/images/logo.png",
+  "build/images/preview.png": "/build/images/preview.png",
+  "build/images/discord.png": "/build/images/discord.png",
+  "build/images/twitter-xxl.png": "/build/images/twitter-xxl.png"
+}
