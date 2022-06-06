@@ -8,6 +8,7 @@
 
   <title>Mooncraft NFT</title>
   <link rel="icon" type="image/png" href="/build/images/fav.png" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="/build/main.css">
   <script src="/build/main.js"></script>
@@ -20,10 +21,19 @@
     <div class="container ">
       <div class="nav">
         <!-- <h1 class="title"> MOONCRAFT (LOGO) </h1> -->
-        <img  class="logo" src="../build/images/mooncraftLogoFinal.gif" >
+        <img class="logo" src="../build/images/mooncraftLogoFinal.gif">
         <div>
-          <a href="https://twitter.com/NITROVERSENFT" target="_new"> <img id="logo" src="/build/images/twitter-xxl.png" alt="Logo" /> </a>
+          <a href="https://twitter.com/NITROVERSENFT" target="_new"> <img id="logo" src="/build/images/twitter-xxl.png"
+              alt="Logo" /> </a>
           <a href="#"> <img id="logo" src="/build/images/discord.png" alt="Logo" /> </a>
+
+          <div>
+
+            <div class="popup" onclick="myFunction()"> Claim 
+              <span class="popuptext" id="myPopup">Claim Feature Coming Soon! </span>
+            </div>
+
+          </div>
           <a class="Opensea" href="#"> Buy on Opensea </a>
 
         </div>
@@ -32,26 +42,33 @@
 
     <div class="intro">
       <h2> Introducing the: </h2>
-      <h1 class="animate-charcter">  <br> THE MOONCRAFT NFT PASS</h1>
+      <h1 class="animate-charcter"> <br> THE MOONCRAFT NFT PASS</h1>
 
-      <p> XXXX collection yada yada yada yada yada yaddaaa yaa yada ydad</p>
+      <p> Mooncraft is a metaverse based on Minecraft. We intend to expand our use of Minecraft by connecting it to the
+        blockchain and enabling real-time asset exchange.
+      </p>
+
+      <p> Diamond, Gold, and Silver Mooncraft passes are among the 10,000 available. Each has its own set of advantages.
+      </p>
+
+
 
       <div class="passFlex">
 
         <div class="passFlex-imgCon">
-          <img id="logo2" src="/build/images/diamond.gif" alt="Logo" />
+          <img id="logo2" src="/build/images/diamondPass.gif" alt="Logo" />
           <p> DIAMOND PASS</p>
 
         </div>
         <div class="passFlex-imgCon">
-          <img id="logo2" src="/build/images/gold.gif" alt="Logo" />
+          <img id="logo2" src="/build/images/goldPass.gif" alt="Logo" />
           <p> GOLD PASS</p>
         </div>
 
-      
+
 
         <div class="passFlex-imgCon">
-          <img id="logo2" src="/build/images/silver.gif" alt="Logo" />
+          <img id="logo2" src="/build/images/silverPass.gif" alt="Logo" />
           <p> SILVER PASS </p>
 
         </div>
@@ -71,7 +88,11 @@
         </div>
 
 
-        <div id="minting-dapp"></div>
+        <!-- <div id="minting-dapp"></div> -->
+
+        <div>
+          <h1> Mint ONLY thru <a href=""> Contract </a> </h1>
+        </div>
 
 
       </div>
@@ -82,61 +103,37 @@
 
       <h2 class="header_txt ">SNEAK PEEK </h2>
 
-      <div class="CSSgal">
 
-        <!-- Don't wrap targets in parent -->
-        <s id="s1"></s>
-        <s id="s2"></s>
-        <s id="s3"></s>
-        <s id="s4"></s>
-
-        <div class="slider">
-          <div>
-            <img src="/build/images/moonshop.png" alt="">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"> <img src="/build/images/moonshop.png" alt="">
           </div>
-          <div>
-            <img src="/build/images/world2.jpg" alt="">
-          </div>
-          <div>
-            <img src="/build/images/world3.jpg" alt="">
-          </div>
-          <div>
-            <img src="/build/images/world4.jpg" alt="">
-          </div>
+          <div class="swiper-slide"><img src="/build/images/moonshop.png" alt=""> </div>
+          <div class="swiper-slide"><img src="/build/images/moonshop.png" alt=""></div>
+          ...
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
-        <div class="prevNext">
-          <div><a href="#s4"></a><a href="#s2"></a></div>
-          <div><a href="#s1"></a><a href="#s3"></a></div>
-          <div><a href="#s2"></a><a href="#s4"></a></div>
-          <div><a href="#s3"></a><a href="#s1"></a></div>
-        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
 
-        <div class="bullets">
-          <a href="#s1">1</a>
-          <a href="#s2">2</a>
-          <a href="#s3">3</a>
-          <a href="#s4">4</a>
-        </div>
-
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
       </div>
+
+
     </div>
 
 
 
-<div class="container team">
-
-  <div>
-    
-  </div>
-  <div></div>
-  <div></div>
-
-
-</div>
     <div class="container footer">
 
-      <h2> COPYRIGHT Ⓒ 2022 MOONCRAFT NFT  </h2>
+      <h2> COPYRIGHT Ⓒ 2022 MOONCRAFT NFT </h2>
 
 
     </div>
@@ -144,6 +141,49 @@
 
 
   </main>
+
+
+  <script>
+    // When the user clicks on div, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+  </script>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  </script>
+
+
+
 </body>
 
 </html>
